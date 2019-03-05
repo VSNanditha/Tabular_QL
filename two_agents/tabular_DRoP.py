@@ -4,8 +4,8 @@ import random
 from mpi4py import MPI
 
 import two_agents.tabular_ql as ql
-from action_selectors.cc_actionselector import CCActionSelector
-from action_selectors.hat_actionselector import HATActionSelector
+from action_selectors.CC_ActionSelector import CCActionSelector
+from action_selectors.HAT_ActionSelector import HATActionSelector
 
 
 class DRoPLearningAgent:

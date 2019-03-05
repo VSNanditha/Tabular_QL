@@ -5,7 +5,7 @@ import random
 
 from scipy.spatial import distance
 
-from action_selectors.hat_actionselector import HATActionSelector
+from action_selectors.HAT_ActionSelector import HATActionSelector
 
 
 class CCActionSelector:

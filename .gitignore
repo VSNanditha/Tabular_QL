@@ -1,0 +1,11 @@
+.idea/
+two_agents/rundata/
+two_agents/rundata/objecttransport/run1/zipped.zip
+*.arff
+*.raw
+*.pkl
+*.txt
+*.data
+*script
+*.eps
+*.zip

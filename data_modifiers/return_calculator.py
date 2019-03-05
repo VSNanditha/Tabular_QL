@@ -4,14 +4,14 @@ path = "/Users/nandithavittanala/virenv/tabularQL/two_agents/rundata/guidedog/ru
 
 window_size = 100
 plot_filename_bases = []
-file_range = 10
+file_range = 6
 gamma = 0.99
 
 # Append all file_name prefixes to be plotted together
 # plot_filename_bases.append('GN_IL_HAT_CCorC_Noise0.1_0.999977_alpha0.005_cThresh0.7_')
 # plot_filename_bases.append('GN_IL_CHAT_Noise0.1_0.999977_alpha0.005_cThresh0.7_')
-# plot_filename_bases.append('episode_rewards_drop_')
-plot_filename_bases.append('episode_rewards_tabQL_')
+plot_filename_bases.append('episode_rewards_drop_')
+# plot_filename_bases.append('episode_rewards_tabQL_')
 
 for i in range(len(plot_filename_bases)):
     for j in range(file_range):

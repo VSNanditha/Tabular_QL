@@ -6,8 +6,8 @@ import random
 import numpy as np
 from mpi4py import MPI
 
-from action_selectors.cc_actionselector import CCActionSelector
-from action_selectors.chat_actionselector import CHATActionSelector
+from action_selectors.CC_ActionSelector import CCActionSelector
+from action_selectors.CHAT_ActionSelector import CHATActionSelector
 
 
 # lambda = 0.9  # if 0 then traces turned off

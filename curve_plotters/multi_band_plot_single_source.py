@@ -12,7 +12,7 @@ from curve_plotters.band_plot import *
 dir_string = "/Users/nandithavittanala/virenv/tabularQL/two_agents/rundata/guidedog/run9/moving_obstacles/"
 # dir_string = "/Users/nandithavittanala/virenv/tabularQL/two_agents/rundata/objecttransport/run9/conf_avg_files/"
 # dir_string = "/Users/nandithavittanala/virenv/tabularQL/action_selectors/"
-fname_ID_range = range(8)
+fname_ID_range = range(10)
 winsize = 20  # 200
 alpha = 1.0
 num_plot_points = 100
@@ -22,9 +22,9 @@ max_x = -1  # if not used
 # plot_fname_base = 'action_choice_drop_'
 # plot_fname_base = 'conf_values_drop_'
 # plot_fname_base = 'GN_IL_CHAT_Noise0.1_0.999977_alpha0.005_cThresh0.7_'
-plot_fname_base = 'GN_IL_HAT_CCorC_Noise0.1_0.999977_alpha0.005_cThresh0.7_'
+# plot_fname_base = 'GN_IL_HAT_CCorC_Noise0.1_0.999977_alpha0.005_cThresh0.7_'
 # plot_fname_base = 'episode_rewards_drop_'
-# plot_fname_base = 'episode_rewards_tabQL_'
+plot_fname_base = 'episode_rewards_tabQL_'
 
 
 n_cols = 2  # y-cols in input .stat file (excluding x column)
@@ -32,7 +32,7 @@ plot_cols = [0, 1]  # column-indices to output
 # plot_cols = [2, 3, 4]
 # file_col_names = ['Episode Rewards CoordChat']
 # file_col_names_map = {3:'CC = CHAT', 4:'CC != CHAT', 2:'Q'}
-file_col_names_map = {0:'cc_rewards', 1:'cc_steps'}
+file_col_names_map = {0:'tabql_rewards', 1:'tabql_steps'}
 # file_col_names = ['Avg CP (CC) vals', 'Avg CP (CHAT) vals', 'Avg CQ vals']
 # file_col_names = ['rewards', 'steps']
 line_types = [1, 3, 4, 8, 9, 10, 12, 13]

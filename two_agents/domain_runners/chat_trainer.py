@@ -6,7 +6,7 @@ from two_agents import tabular_ql
 
 
 def main():
-    env = gym.make("GuideDog-v0")
+    env = gym.make("GuideDog-v1")
     file_path = dirname(dirname(abspath(__file__)))
     tabular_ql.chat_learn(
         env,
