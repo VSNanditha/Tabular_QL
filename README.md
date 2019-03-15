@@ -4,19 +4,25 @@ Tabular Q-Learning techniques for two-agent domains using OpenAI gym libraries
 
 ## Contents
 ### Action Selectors
-Action values are selected based on either exploitation of prior knowledge or Q - values or exploration. Weka Randomforest classifier is used as supervised learner. 
+Action values are selected based on either exploitation of prior knowledge or Q-values or exploration. Weka Randomforest classifier is used as supervised learner. 
 * Human Agent Transfer (HAT)
+    
     Actions are taken from supervised learner devised using prior knowledge (in this case, human demonstrations) with a probability parameter which decays exponentially during the learning process. 
 * Confidence based HAT (CHAT)
+    
     Extended version of HAT, which is also a supervised learner devised using human demonstrations. Action values are exploited only when the confidence values are above a threshold.
 * Coordination Confidence (CC)
+    
     Confidence values for the joint actions of the joint agents are computed and action values are considered only when the joint confidence is above the threshold.
 * Action selection by Exploration/Q-values
+    
     If the selected supervised learner fails to suggest an action, either actions are selected based on Q - values or by exploration with certain exploration rate.
 ### Learner Classes
-* Simple Tabular Q - Learner Class
-    Learner class uses a simple Q - Learner function to store the knowledge gained.
+* Simple Tabular Q-Learner Class
+    
+    Learner class uses a simple Q-Learner function to store the knowledge gained.
 * Dynamic Reuse of Prior Learner Class
+    
     Learner class uses 3 different learner objects each instantiated with a Q table using CHAT, CC and learner without any supervisor.
     
 ## Usage
