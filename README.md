@@ -4,7 +4,7 @@ Tabular Q-Learning techniques for two-agent domains using OpenAI gym libraries
 
 ## Contents
 ### Action Selectors
-Action values are selected based on either exploitation of prior knowledge or Q-values or exploration. Weka Randomforest classifier is used as supervised learner. 
+&ensp;&ensp;&ensp;Action values are selected based on either exploitation of prior knowledge or Q-values or exploration. Weka Randomforest classifier is used as supervised learner. 
 * Human Agent Transfer (HAT)
     
     Actions are taken from supervised learner devised using prior knowledge (in this case, human demonstrations) with a probability parameter which decays exponentially during the learning process. 
